@@ -1,0 +1,25 @@
+.bg_custom {
+  background-image: url('./assets/task image.jpg'); /* Replace with your image path */
+  background-repeat: repeat;
+  background-size: cover; /* Covers the full area while maintaining aspect ratio */
+  background-position:inherit; /* Center the image */
+  min-height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width of its container */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .bg_custom {
+    background-size: cover; /* Ensure the entire image fits within the view */
+    background-position: top; /* Align image to the top */
+    min-height: 50vh; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bg_custom {
+    background-size: cover;
+    background-position: center top; /* Center align for very small devices */
+    min-height: 40vh; /* Further adjust height */
+  }
+}
