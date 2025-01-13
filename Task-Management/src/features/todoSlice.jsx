@@ -6,7 +6,7 @@ const initialState = {
     loading : false,
     error : null
 }
-const host = "http://localhost:5000";
+const host = "https://task-hub-back-end.onrender.com";
 
 // Fetch tasks from the backend (GET request)
 export const getNotes = createAsyncThunk('todos/getNotes', async (_, { rejectWithValue }) => {
