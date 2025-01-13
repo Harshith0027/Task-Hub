@@ -48,6 +48,6 @@ app.use(
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${port} for local instance and if it is deployed it will run in backEnd endpoint of that site.`);
   console.log("Server is online");
 });
