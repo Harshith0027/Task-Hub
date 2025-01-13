@@ -3,7 +3,7 @@ import { TextField, Button, Box, Typography, Container } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const host = "http://localhost:5000";
+  const host = "https://task-hub-back-end.onrender.com";
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
