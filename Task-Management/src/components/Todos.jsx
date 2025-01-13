@@ -38,7 +38,7 @@ const Todos = () => {
       const localData = JSON.parse(output);
       const { token, user } = localData;
       const response = await fetch(
-        `http://localhost:5000/api/tasks/updateTasks/${user}/${currentTodo._id}`,
+        `https://task-hub-back-end.onrender.com/api/tasks/updateTasks/${user}/${currentTodo._id}`,
         {
           method: "PATCH",
           headers: {
