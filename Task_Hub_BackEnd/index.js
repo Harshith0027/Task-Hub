@@ -14,6 +14,13 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/auth",userRouter);
 app.use("/api/tasks",taskRouter);
+app.use(express.static('dist', {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript');
+    }
+  },
+}));
 app.listen(port, ()=> {
     console.log(`Server is running on port ${port}`);
     console.log('Server is online');
