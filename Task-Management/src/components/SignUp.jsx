@@ -3,7 +3,7 @@ import { TextField, Button, Box, Typography, Container } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
-  const host = "http://localhost:5000"; // Replace with your API host URL
+  const host = "https://task-hub-back-end.onrender.com"; // Replace with your API host URL
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
